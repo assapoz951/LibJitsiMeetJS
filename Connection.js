@@ -46,7 +46,7 @@ Connection.prototype.setToken = function (token) {
  * @returns {Conference} returns the new conference object.
  */
 Connection.prototype.initConference = function (name, options) {
-    return new Conference();
+    return new Conference(name, options, this);
 }
 
 module.exports = Connection;
