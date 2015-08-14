@@ -75,16 +75,6 @@ Conference.prototype.removePresenceCommandListener = function (command) {
 }
 
 /**
- * Sends local streams to the server side.
- * @param stream the stream object.
- * @param successCallback callback that will be called when the stream is sending is successfull.
- * @param errorCallback callback that will be called if something go wrong.
- */
-Conference.prototype.sendStream = function (stream, successCallback, errorCallback) {
-
-}
-
-/**
  * Sends text message to the other participants in the conference
  * @param message the text message.
  */
