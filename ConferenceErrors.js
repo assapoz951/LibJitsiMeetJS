@@ -12,10 +12,6 @@ var ConferenceErrors = {
      */
     CONNECTION_ERROR: "conference.connectionError",
     /**
-     * Indicates that the video bridge is down.
-     */
-    BRIDGE_DOWN: "conference.bridgeDown"
-    /**
      * Many more errors TBD here.
      */
 };
