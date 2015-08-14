@@ -25,9 +25,8 @@ Connection.prototype.connect = function (successCallback, errorCallback) {
 /**
  * Disconnect the client from the server.
  * @param successCallback this callback will be called when we have successfully disconnected
- * @param errorCallback this callback will be called when the disconnect didn't succeed
  */
-Connection.prototype.disconnect = function (successCallback, errorCallback) {
+Connection.prototype.disconnect = function (successCallback) {
 
 }
 
