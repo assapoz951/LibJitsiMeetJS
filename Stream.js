@@ -78,4 +78,12 @@ Stream.prototype.stop = function () {
 
 }
 
+
+/**
+ * Starts sending the stream.
+ * NOTE: Works for the local stream only.
+ */
+Stream.prototype.start = function(successCallback, errorCallback) {
+}
+
 module.exports = Stream;
