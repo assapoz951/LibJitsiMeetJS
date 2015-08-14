@@ -114,22 +114,6 @@ Conference.prototype.setDisplayName = function(name) {
 }
 
 /**
- * Start desktop sharing. This will replace the video stream with the desktop sharing stream.
- * @return Stream stream of type DESKTOP
- */
-Conference.prototype.startDesktopSharing = function() {
-
-}
-
-/**
- * Stop desktop sharing. This will replace the desktop stream with the video stream.
- * @return Stream stream of type VIDEO
- */
-Conference.prototype.endDesktopSharing = function() {
-
-}
-
-/**
  * Elects the participant with the given id to be the selected participant or the speaker.
  * @param id the identifier of the participant
  */
