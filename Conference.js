@@ -93,6 +93,13 @@ Conference.prototype.sendTextMessage = function (message) {
 }
 
 /**
+ * Adds a handler for text messages coming from the conference.
+ */
+Conference.prototype.addTextMessageListener = function (onmessage) {
+
+}
+
+/**
  * Send presence command.
  * @param name the name of the command.
  * @param values Object with keys and values that will be send.
