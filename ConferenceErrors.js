@@ -12,6 +12,10 @@ var ConferenceErrors = {
      */
     CONNECTION_ERROR: "conference.connectionError",
     /**
+     * Indicates that there is no available videobridge.
+     */
+    VIDEOBRIDGE_NOT_AVAILABLE: "conference.videobridgeNotAvailable"
+    /**
      * Many more errors TBD here.
      */
 };
