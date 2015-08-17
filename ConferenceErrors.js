@@ -12,9 +12,9 @@ var ConferenceErrors = {
      */
     CONNECTION_ERROR: "conference.connectionError",
     /**
-     * Indicates that the video bridge is down.
+     * Indicates that there is no available videobridge.
      */
-    BRIDGE_DOWN: "conference.bridgeDown"
+    VIDEOBRIDGE_NOT_AVAILABLE: "conference.videobridgeNotAvailable"
     /**
      * Many more errors TBD here.
      */
