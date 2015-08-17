@@ -32,9 +32,9 @@ Conference.prototype.leave = function () {
  * should be created or some additional configurations about resolution for example.
  * @param successCallback callback that will receive the streams.
  * @param errorCallback callback that will be called if accessing the media streams fail.
- * @return an array of all created MediaStream-s
+ * @return an array of all created Stream-s
  */
-Conference.prototype.createMediaStreams = function (options, successCallback, errorCallback) {
+Conference.prototype.createStreams = function (options, successCallback, errorCallback) {
 
 }
 
