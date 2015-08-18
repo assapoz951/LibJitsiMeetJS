@@ -39,6 +39,15 @@ Conference.prototype.createMediaStreams = function (options, successCallback, er
 }
 
 /**
+ * Returns streams (matching a specific filter, if provided)
+ * @param [filter] an optional filter
+ * @example conference.getStreams(By.UserId(userId))
+ */
+Conference.prototype.getStreams = function (filter) {
+
+};
+
+
 /**
  * Attaches a handler for events(For example - "participant joined".) in the conference. All possible event are defined
  * in ConferenceEvents.
