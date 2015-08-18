@@ -39,40 +39,32 @@ Conference.prototype.createMediaStreams = function (options, successCallback, er
 }
 
 /**
+/**
  * Attaches a handler for events(For example - "participant joined".) in the conference. All possible event are defined
  * in ConferenceEvents.
  * @param eventId the event ID.
  * @param handler handler for the event.
+ *
+ * Note: consider adding eventing functionality by extending an EventEmitter impl, instead of rolling ourselves
  */
-Conference.prototype.addEventListener = function (eventId, handler) {
+Conference.prototype.on = function (eventId, handler) {
 
 }
 
 /**
  * Removes event listener
  * @param eventId the event ID.
+ * @param [handler] optional, the specific handler to unbind
+ *
+ * Note: consider adding eventing functionality by extending an EventEmitter impl, instead of rolling ourselves
  */
-Conference.prototype.removeEventListener = function (eventId) {
+Conference.prototype.off = function (eventId, handler) {
 
 }
 
-/**
- * Receives notifications from another participants for commands / custom events(send by sendPresenceCommand method).
- * @param command {String} the name of the command
- * @param handler {Function} handler for the command
- */
-Conference.prototype.addPresenceCommandListener = function (command, handler) {
-
-}
-
-
-/**
- * Removes command  listener
- * @param command {String}  the name of the command
- */
-Conference.prototype.removePresenceCommandListener = function (command) {
-
-}
+// Common aliases for event emitter
+Conference.prototype.addEventListener = Conference.prototype.on
+Conference.prototype.removeEventListener = Conference.prototype.off
 
 /**
  * Sends text message to the other participants in the conference
@@ -91,7 +83,7 @@ Conference.prototype.sendTextMessage = function (message) {
  * @param successCallback will be called when the command is successfully send.
  * @param errorCallback will be called when the command is not sent successfully.
  */
-Conference.prototype.sendPresenceCommand = function (name, values, persistent, successCallback, errorCallback) {
+Conference.prototype.sendSignal = function (signal) {
 
 }
 

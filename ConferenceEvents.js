@@ -62,7 +62,12 @@ var ConferenceEvents = {
     /**
      * Indicates that the connection to the conference has been restored.
      */
-    CONNECTION_RESTORED: "conference.connecionRestored"
+    CONNECTION_RESTORED: "conference.connecionRestored",
+
+    /**
+     * Indicates that a signal has been recieved
+     */
+    SIGNAL_RECEIVED: "conference.signalRecieved"
 };
 
 module.exports = ConferenceEvents;
