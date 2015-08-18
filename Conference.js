@@ -2,14 +2,14 @@
  * Creates a Conference object with the given name and properties.
  * Note: this constructor is not a part of the public API (objects should be
  * created using Connection.createConference).
- * @param name name of the conference.
- * @param options Object with properties / settings related to the conference that will be created.
- * @param connection The Connection object for this Conference.
+ * @param options properties / settings related to the conference that will be created.
+ * @param options.name the name of the conference
+ * @param options.connection the Connection object for this Conference.
  * @constructor
  */
 
-function Conference(name, options, connection) {
-    
+function Conference(options) {
+  //assert that required options are provided, throw an error if not
 }
 
 /**
