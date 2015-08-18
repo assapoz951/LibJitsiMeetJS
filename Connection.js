@@ -15,18 +15,17 @@ function Connection(appID, token, options) {
 
 /**
  * Connect the client with the server.
- * @param successCallback this callback will be called when the connection is successfull
- * @param errorCallback this callback will be called when the connection fail.
+ * @returns {Promise.<{void}, ConferenceError>} A promise that returns a ConferenceError if rejected.
  */
-Connection.prototype.connect = function (successCallback, errorCallback) {
+Connection.prototype.connect = function () {
 
 }
 
 /**
  * Disconnect the client from the server.
- * @param successCallback this callback will be called when we have successfully disconnected
+ * @returns {Promise.<{void}, ConferenceError>} A promise that returns a ConferenceError if rejected.
  */
-Connection.prototype.disconnect = function (successCallback) {
+Connection.prototype.disconnect = function () {
 
 }
 
