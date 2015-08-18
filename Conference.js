@@ -30,11 +30,10 @@ Conference.prototype.leave = function () {
  * Creates the media streams and returns them via the callback.
  * @param options Object with properties / settings defining which streams(Stream.AUDIO, Stream.VIDEO, Stream.DESKTOP)
  * should be created or some additional configurations about resolution for example.
- * @param successCallback callback that will receive the streams.
- * @param errorCallback callback that will be called if accessing the media streams fail.
- * @return an array of all created MediaStream-s
+ * @returns {Promise.<{Array.<Stream>}, ConferenceError>} A promise that returns an array of created streams if resolved,
+ *     or a ConferenceError if rejected.
  */
-Conference.prototype.createMediaStreams = function (options, successCallback, errorCallback) {
+Conference.prototype.share = function (options) {
 
 }
 
@@ -89,8 +88,7 @@ Conference.prototype.sendTextMessage = function (message) {
  * @param {string} signal.name the name of the signal.
  * @param {boolean} signal.persistent if false the command will be sent only one time
  * otherwise it will be sent with every system message sent to the other participants.
- * @returns {Promise.<{void}, ConferenceError>} A promise that returns an array of created streams if resolved,
- *     or an ConferenceError if rejected.
+ * @returns {Promise.<{void}, ConferenceError>} A promise that a ConferenceError if rejected.
  */
 Conference.prototype.sendSignal = function (signal) {
 
