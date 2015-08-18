@@ -84,13 +84,13 @@ Conference.prototype.sendTextMessage = function (message) {
 }
 
 /**
- * Send presence command.
- * @param name the name of the command.
- * @param values Object with keys and values that will be send.
- * @param persistent if false the command will be sent only one time
+ * Send a signal.
+ * @param {object} signal the signal and it's values
+ * @param {string} signal.name the name of the signal.
+ * @param {boolean} signal.persistent if false the command will be sent only one time
  * otherwise it will be sent with every system message sent to the other participants.
- * @param successCallback will be called when the command is successfully send.
- * @param errorCallback will be called when the command is not sent successfully.
+ * @returns {Promise.<{void}, ConferenceError>} A promise that returns an array of created streams if resolved,
+ *     or an ConferenceError if rejected.
  */
 Conference.prototype.sendSignal = function (signal) {
 
